@@ -1,4 +1,6 @@
 # Tracer
+[![Build Status](https://travis-ci.org/raventid/tracer.svg?branch=master)](https://travis-ci.org/raventid/tracer)
+
 
 Tracer is a simple and fast tracer for your Ruby code. It follows your code line by line and deep dive into any gem source code to carefully inspect every method you call. Think - it's puts debugging on steroids.
 
