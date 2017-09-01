@@ -1,8 +1,18 @@
 # Tracer
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/tracer`. To experiment with that code, run `bin/console` for an interactive prompt.
+Tracer is a simple and fast tracer for your Ruby code. It follows your code line by line and deep dive into gem's source code to know where your problem comes from. Think - it's puts debugging on steroids.
 
-TODO: Delete this and the text above, and describe your gem
+```ruby
+Tracer.run do
+  MyLibrary.call("Hello")
+end
+```
+
+```
+Output:
+-- call name: "Hello"
+-- puts name
+```
 
 ## Installation
 
