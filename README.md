@@ -1,18 +1,6 @@
 # Tracer
 
-Tracer is a simple and fast tracer for your Ruby code. It follows your code line by line and deep dive into gem's source code to know where your problem comes from. Think - it's puts debugging on steroids.
-
-```ruby
-Tracer.run do
-  MyLibrary.call("Hello")
-end
-```
-
-```
-Output:
--- call name: "Hello"
--- puts name
-```
+Tracer is a simple and fast tracer for your Ruby code. It follows your code line by line and deep dive into any gem source code to carefully inspect every method you call. Think - it's puts debugging on steroids.
 
 ## Installation
 
@@ -32,7 +20,28 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Configuration
+Tracer provides a few options you can configure:
+- Show or not params for methods (for custom classes you can choose a strategie)
+- Write output on screen or to file (also you can provide your custom strategie)
+- How to handle fatal errors (few options)
+
+You can skip setting it up, because Tracer provides saine defaults for every case.
+
+
+Basic usage might look like:
+
+```ruby
+Tracer.run do
+  MyLibrary.call("Hello")
+end
+```
+
+```
+Output:
+-- call name: "Hello"
+-- puts name
+```
 
 ## Development
 
@@ -42,5 +51,5 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/tracer.
+Bug reports and pull requests are welcome on GitHub at https://github.com/raventid/tracer.
 
