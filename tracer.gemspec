@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'tracer/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "tracer"
+  spec.name          = "tracer-rb"
   spec.version       = Tracer::VERSION
   spec.authors       = ["raventid"]
   spec.email         = ["juliankul@gmail.com"]
