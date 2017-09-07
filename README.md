@@ -37,14 +37,22 @@ Basic usage might look like:
 
 ```ruby
 Tracerius::Runner.run do
-  MyLibrary.call("Hello")
+  puts "Hello"
 end
 ```
 
 ```
 Output:
--- call name: "Hello"
--- puts name
+47.929 0.000     line hello.rb:4
+47.929 0.000   c-call hello.rb:4        puts   Kernel
+47.929 0.000   c-call hello.rb:4        puts       IO
+47.930 0.000   c-call hello.rb:4       write       IO
+47.930 0.001 c-return hello.rb:4       write       IO
+47.930 0.000   c-call hello.rb:4       write       IO
+
+47.930 0.000 c-return hello.rb:4       write       IO
+47.930 0.000 c-return hello.rb:4        puts       IO
+47.930 0.000 c-return hello.rb:4        puts   Kernel
 ```
 
 ## Development
