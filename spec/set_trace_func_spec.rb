@@ -1,7 +1,7 @@
 require 'tracer'
 
 # Except some number of lines to be written in standart output
-describe Tracer::SetTraceFunc do
+describe Tracer::Runner do
 
   context "code under the trace do not raise any exception" do
     it "shows me some trace where I can see 'hello'" do
