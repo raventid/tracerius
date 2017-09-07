@@ -1,4 +1,3 @@
 require "tracer/version"
-
-module Tracer
-end
+require "tracer/set_trace_func"
+require "tracer/formatters/basic"
