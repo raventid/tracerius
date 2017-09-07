@@ -36,7 +36,7 @@ You can skip setting it up, because Tracer provides saine defaults for every cas
 Basic usage might look like:
 
 ```ruby
-Tracer.run do
+Tracer::Runner.run do
   MyLibrary.call("Hello")
 end
 ```
