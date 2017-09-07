@@ -4,6 +4,8 @@
 
 Tracer is a simple and fast tracer for your Ruby code. It follows your code line by line and deep dive into any gem source code to carefully inspect every method you call. Think - it's puts debugging on steroids.
 
+It's very opinioned out of the box, but in the same time it tries really hard to be flexible, so you can adopt it to your tracing style.
+
 ## Installation
 
 Add this line to your application's Gemfile:
