@@ -1,8 +1,8 @@
-require "tracer/version"
-require "tracer/set_trace_func"
-require "tracer/formatters/basic"
+require "tracerius/version"
+require "tracerius/set_trace_func"
+require "tracerius/formatters/basic"
 
-module Tracer
+module Tracerius
   class Runner
     def initialize(adapter=nil)
       @adapter = adapter || SetTraceFunc.new

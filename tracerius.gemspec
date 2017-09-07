@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'tracer/version'
+require 'tracerius/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "tracer-rb"
-  spec.version       = Tracer::VERSION
+  spec.name          = "tracerius"
+  spec.version       = Tracerius::VERSION
   spec.authors       = ["raventid"]
   spec.email         = ["juliankul@gmail.com"]
 
   spec.summary       = %q{Simple and fast tracer for your Ruby code.}
   spec.description   = %q{Simple and fast tracer for your Ruby code. It's like puts debugging but on steroids.}
-  spec.homepage      = "https://github.com/raventid/tracer"
+  spec.homepage      = "https://github.com/raventid/tracerius"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"

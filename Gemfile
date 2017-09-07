@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in tracer.gemspec
+# Specify your gem's dependencies in tracerius.gemspec
 gemspec

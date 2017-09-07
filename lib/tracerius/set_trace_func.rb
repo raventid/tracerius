@@ -1,4 +1,4 @@
-module Tracer
+module Tracerius
   class SetTraceFunc
 
     def run
@@ -11,7 +11,7 @@ module Tracer
     end
 
     def start_tracing
-      formatter = Tracer::Formatters::Basic.call
+      formatter = Tracerius::Formatters::Basic.call
       set_trace_func(formatter)
     end
 

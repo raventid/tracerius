@@ -1,6 +1,6 @@
 require 'date'
 
-module Tracer
+module Tracerius
   module Formatters
     class Basic
       def self.call

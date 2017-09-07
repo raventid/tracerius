@@ -1,8 +1,8 @@
-# Tracer
-[![Build Status](https://travis-ci.org/raventid/tracer.svg?branch=master)](https://travis-ci.org/raventid/tracer)
+# Tracerius
+[![Build Status](https://travis-ci.org/raventid/tracerius.svg?branch=master)](https://travis-ci.org/raventid/tracer)
 
 
-Tracer is a simple and fast tracer for your Ruby code. It follows your code line by line and deep dive into any gem source code to carefully inspect every method you call. Think - it's puts debugging on steroids.
+Tracerius is a simple and fast tracer for your Ruby code. It follows your code line by line and deep dive into any gem source code to carefully inspect every method you call. Think - it's puts debugging on steroids.
 
 It's very opinioned out of the box, but in the same time it tries really hard to be flexible, so you can adopt it to your tracing style.
 
@@ -11,7 +11,7 @@ It's very opinioned out of the box, but in the same time it tries really hard to
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'tracer'
+gem 'tracerius'
 ```
 
 And then execute:
@@ -20,23 +20,23 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install tracer
+    $ gem install tracerius
 
 ## Usage
 
 ### Configuration
-Tracer provides a few options you can configure:
+Tracerius provides a few options you can configure:
 - Show or not params for methods (for custom classes you can choose a strategie)
 - Write output on screen or to file (also you can provide your custom strategie)
 - How to handle fatal errors (few options)
 
-You can skip setting it up, because Tracer provides saine defaults for every case.
+You can skip setting it up, because Tracerius provides saine defaults for every case.
 
 
 Basic usage might look like:
 
 ```ruby
-Tracer::Runner.run do
+Tracerius::Runner.run do
   MyLibrary.call("Hello")
 end
 ```
@@ -55,5 +55,5 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/raventid/tracer.
+Bug reports and pull requests are welcome on GitHub at https://github.com/raventid/tracerius.
 
