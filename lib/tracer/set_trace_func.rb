@@ -1,5 +1,3 @@
-require 'date'
-
 module Tracer
   class SetTraceFunc
 

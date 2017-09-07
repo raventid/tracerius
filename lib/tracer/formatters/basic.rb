@@ -1,3 +1,5 @@
+require 'date'
+
 module Tracer
   module Formatters
     class Basic
