@@ -2,9 +2,9 @@
 [![Build Status](https://travis-ci.org/raventid/tracerius.svg?branch=master)](https://travis-ci.org/raventid/tracerius)
 
 
-Tracerius is a simple and fast tracer for your Ruby code. It follows your code line by line and deep dive into any gem source code to carefully inspect every method you call. Think - it's puts debugging on steroids.
+Tracerius is a simple tracer for your Ruby code. It follows your codebase line by line and deep dive into any gem source to carefully inspect every method you call. Think - it's "puts debugging" on steroids.
 
-It's very opinioned out of the box, but in the same time it tries really hard to be flexible, so you can adopt it to your tracing style.
+It's very opinioned out of the box and has only few options to tweak, which makes it extremly simple to use - just plug and play! Think - it's Rails among tracers.
 
 ## Installation
 
